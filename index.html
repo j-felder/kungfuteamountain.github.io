@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <title>CRod and Jay's Incredible Treasure Hunt Game</title>
+    <title>Jay's Adventerous Treasure Hunt Game</title>
 	<link rel="icon" type="image/png" href="https://clipartix.com/wp-content/uploads/2016/07/Treasure-chest-clipart-free-clipart-images-5.png">
 	<link rel="stylesheet" href="treasurehunt.css">
 </head>
@@ -24,12 +24,29 @@
 </span>
 
 <span id="chest">
-	<img src="https://publicdomainvectors.org/photos/1298510091.png"/>
+	<img src="https://publicdomainvectors.org/photos/1298510091.png"
+	width="500px"
+	height="500px"/>
 </span>
 </div>
-<table>
+
+<div>
+<table border="2">
 	<tr>
-		<td id="0" onclick="treasure(0)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/> </td>
+		<td>Total Clicks</td>
+		<td>Remaining Clicks</td>
+	</tr>
+	<tr>
+		<td id="counter">countClicked</td>
+		<td id="countRemain">countReamin</td>
+	</tr>
+</table>
+</div>
+
+<table border="1"
+	style="height: 500px; width: 500px;" id="gameboard">
+	<tr>
+		<td id="0" onclick="treasure(0)"class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
 		<td id="1" onclick="treasure(1)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
 		<td id="2" onclick="treasure(2)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
 
@@ -51,11 +68,11 @@
 
 <button type="button" onclick="location.reload()">Restart the Game</button>
 
-<footer>&copy; Crod and J</footer>
+<footer>&copy;  J Felder</footer>
 
 <script type="text/javascript" src="treasurehunt.js"></script>
 
 </body>
 
 
-</html>s
+</html>
